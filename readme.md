@@ -21,3 +21,17 @@ When the bad site tried to load a page from the good site in a frame, to clickja
 [<img src="images/framebusting.png">](images/framebusting.png)
 
 The good site can still load its own pages into frames.
+
+## What the code?!
+
+This is a Hapi app with three routes:
+
+- A regular page on the good site
+- A frame page on the good site
+- A frame page on the bad site
+
+Running the application twice, on different ports, allows us to act like two different sites.
+
+The different port numbers is enough to make browsers consider them to be different.
+
+Note: IE doesn't.
