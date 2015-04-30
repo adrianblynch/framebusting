@@ -60,7 +60,7 @@ server.route({
 
         return reply(page.join("\n"))
         	.type("text/html")
-        	.header('X-Shit', 'POOP');
+        	.header('X-Frame-Options', 'sameorigin');
 
     }
 });
@@ -85,9 +85,7 @@ server.route({
 			'</html>'
 		];
 
-		return reply(page.join("\n"))
-			.type("text/html")
-			.header('X-Shit', 'POOP');
+		return reply(page.join("\n")).type("text/html");
 
 	}
 });
