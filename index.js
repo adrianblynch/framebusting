@@ -1,12 +1,11 @@
 var Hapi = require('hapi');
 
-var port = process.argv[2] || 8000;
-var host = process.argv[3] || 'localhost';
+var port = process.argv[2] || 3000;
 
 // Create a server with a host and port
 var server = new Hapi.Server();
 server.connection({
-    host: host,
+    host: 'localhost',
     port: port,
     routes: {
     	files: {
