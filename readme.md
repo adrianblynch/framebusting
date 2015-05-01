@@ -4,11 +4,11 @@ A simple demo to show the use of `X-Frame-Options` in helping prevent clickjacki
 
 ## Install
 
-`npm install`
+Install framebusting with `npm install`
 
-`node index.js 3001`
+Fire up the good server with `node index.js 3001`
 
-`node index.js 3002`
+Fire up the bad server with `node index.js 3002`
 
 Browse to [The Good Frame page](http://localhost:3001/good-frame.html) then browse to [The Bad Frame page](http://localhost:3002/bad-frame.html).
 
